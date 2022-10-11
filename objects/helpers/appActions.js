@@ -1,11 +1,22 @@
 const { driver } = require("../../utils/android");
 
 const dropDownListXPath = (index) => {
-    return ["/hierarchy", `/android.widget.FrameLayout[${index}]`, "/android.widget.FrameLayout", "/android.widget.ListView"].join("");
+    return [
+        "/hierarchy",
+        `/android.widget.FrameLayout[${index}]`,
+        "/android.widget.FrameLayout",
+        "/android.widget.ListView",
+    ].join("");
 };
 
 const dropDownOptionXPath = (text, index) => {
-    return ["/hierarchy", `/android.widget.FrameLayout[${index}]`, "/android.widget.FrameLayout", "/android.widget.ListView", `/android.widget.TextView[@text='${text}']`].join("");
+    return [
+        "/hierarchy",
+        `/android.widget.FrameLayout[${index}]`,
+        "/android.widget.FrameLayout",
+        "/android.widget.ListView",
+        `/android.widget.TextView[@text='${text}']`,
+    ].join("");
 };
 
 module.exports = {
