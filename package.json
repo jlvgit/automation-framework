@@ -1,0 +1,24 @@
+{
+    "name": "mobile",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "make local-apk",
+        "clean": "./gradlew clean",
+        "reset": "./gradlew clean && make local-apk",
+        "list:avds": "${ANDROID_HOME}/tools/emulator -list-avds",
+        "test": "./node_modules/.bin/cucumber-js features --tags 'not @disabled'",
+        "repl": "./node_modules/appium-repl/bin/appium-repl.js"
+    },
+    "devDependencies": {
+        "@cucumber/cucumber": "^7.0.0",
+        "appium-repl": "^1.0.1",
+        "chai": "^4.3.4",
+        "chai-datetime": "1.8.0",
+        "chance": "^1.1.8",
+        "dateformat": "4.5.1",
+        "knex": "^2.0.0",
+        "mssql": "^8.1.1",
+        "soap": "^0.43.0",
+        "wd": "^1.14.0"
+    }
+}

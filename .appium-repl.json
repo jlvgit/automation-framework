@@ -1,0 +1,14 @@
+{
+    "AVD": {
+        "platformName": "Android",
+        "platformVersion": "10",
+        "deviceName": "Android Emulator",
+        "appActivity": "com.activity.ToggleActivity",
+        "autoGrantPermissions": true,
+        "relaxedSecurity": true,
+        "allowInsecure": "adb_shell",
+        "automationName": "uiautomator2",
+        "eventTimings": true,
+        "enableMultiWindows": true
+    }
+}
